@@ -66,7 +66,7 @@ Ajuste su layout mediante grids, flexbox y media queries.
 
 El proyecto está publicado mediante GitHub Pages en la siguiente URL:
 
-👉 https://gomezalan08.github.io/StepBack/
+👉 https://gomezalan08.github.io/Entregafinal/index.html
 
 
 Autor: Alan Gómez
@@ -79,3 +79,4 @@ Este proyecto se realizó con fines educativos como entrega final del curso de D
 Puedes usarlo como referencia o inspiración citando al autor.
 
 ✨ “Step Back — Descubrí el mundo, un viaje a la vez.” 🌎
+

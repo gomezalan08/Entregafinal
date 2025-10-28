@@ -1,0 +1,14 @@
+.hero{
+  background: url('../img/caribe.jpg') center/cover no-repeat;
+  min-height: 64vh;
+  display:flex;align-items:center;justify-content:center;padding:3.6rem 0;position:relative;color:$white;
+  &::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.45))}
+  .hero-inner{position:relative;z-index:2}
+  h1{font-size:2.6rem;margin-bottom:.5rem}
+  .subtitle{color:rgba(255,255,255,.9)}
+  .search-panel{margin-top:1.25rem}
+}
+.card-dest, .paquete-card{border-radius:.6rem;overflow:hidden;@include transition(transform);&:hover{transform:translateY(-6px)}}
+.price{color:$accent;font-weight:700}
+.newsletter{background:darken($accent,12%);padding:2.2rem;border-radius:6px}
+.avatar{width:56px;height:56px;border-radius:50%;object-fit:cover}

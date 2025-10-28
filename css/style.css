@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.muted {
+  color: #6c757d;
+}
+
+header.site-header {
+  background: #212529;
+  color: #fff;
+}
+
+.navbar {
+  padding: 0.8rem 0;
+}
+
+.navbar-brand {
+  color: #ffc107;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.95);
+  transition: color 0.35s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #ffc107;
+}
+
+.site-footer {
+  background: #212529;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 2rem 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn-cta {
+  background: #ffc107;
+  border: none;
+  color: #111;
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* estilos extra para navbar responsive */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.site-footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero {
+  background: url("../img/caribe.jpg") center/cover no-repeat;
+  min-height: 64vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.6rem 0;
+  position: relative;
+  color: #fff;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.45));
+}
+.hero .hero-inner {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+.hero .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+.hero .search-panel {
+  margin-top: 1.25rem;
+}
+
+.card-dest, .paquete-card {
+  border-radius: 0.6rem;
+  overflow: hidden;
+  transition: transform 0.35s ease;
+}
+.card-dest:hover, .paquete-card:hover {
+  transform: translateY(-6px);
+}
+
+.price {
+  color: #ffc107;
+  font-weight: 700;
+}
+
+.newsletter {
+  background: rgb(200.8, 150.6, 0);
+  padding: 2.2rem;
+  border-radius: 6px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-sub {
+  min-height: 34vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.6rem 0;
+}
+
+.card {
+  box-shadow: 0 8px 24px rgba(18, 18, 18, 0.06);
+}
+
+.paquete-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.paquete-card .precio {
+  color: #ffc107;
+  font-weight: 800;
+}
+
+.testimonial {
+  border-left: 4px solid #ffc107;
+  background: #fff;
+}
+
+.contacto form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px #ffffff;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .card-img-top {
+    height: 160px;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

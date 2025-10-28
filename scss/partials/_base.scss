@@ -1,0 +1,8 @@
+header.site-header{background:$primary;color:$white}
+.navbar{padding:.8rem 0}
+.navbar-brand{color:$accent;font-weight:700}
+.nav-link{color:rgba(255,255,255,.95);@include transition(color);}
+.nav-link:hover,.nav-link.active{color:$accent}
+.site-footer{background:$primary;color:rgba(255,255,255,.85);padding:2rem 0}
+.container{@include container}
+.btn-cta{background:$accent;border:none;color:#111;font-weight:700;padding:.6rem 1rem;border-radius:.5rem}

@@ -53,7 +53,7 @@ img {
   color: #242424;
 }
 .site-header .nav-link:hover, .site-header .nav-link.active {
-  color: #ffcc00;
+  color: #FFCC00;
 }
 
 /* FOOTER */
@@ -170,7 +170,7 @@ img {
 }
 
 .price {
-  color: #ffcc00;
+  color: #FFCC00;
   font-weight: 700;
 }
 
@@ -193,12 +193,12 @@ img {
   object-fit: cover;
 }
 .paquete-card .precio {
-  color: #ffcc00;
+  color: #FFCC00;
   font-weight: 800;
 }
 
 .testimonial {
-  border-left: 4px solid #ffcc00;
+  border-left: 4px solid #FFCC00;
   background: #fff;
 }
 

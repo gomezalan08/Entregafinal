@@ -10,8 +10,14 @@
 @import 'partials/resenas';
 @import 'partials/contacto';
 
+
 /* Media queries */
 @media (max-width: $bp-md) {
-  .hero h1 { font-size: 1.8rem; }
-  .card-img-top { height: 160px; object-fit: cover; }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .card-img-top {
+    height: 160px;
+    object-fit: cover;
+  }
 }

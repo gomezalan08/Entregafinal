@@ -39,3 +39,23 @@
   font-weight: 700;
 }
 
+.btn-cta {
+  background-color: $accent !important;
+  color: #000 !important;
+  font-weight: 600;
+  border: none;
+  padding: 0.65rem 1.4rem;
+  border-radius: 0.4rem;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background-color: darken($accent, 10%) !important;
+    color: #000 !important;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}

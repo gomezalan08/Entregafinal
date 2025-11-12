@@ -4,58 +4,154 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3.6rem 0;
+  padding: 3rem 1rem;
   position: relative;
-  color: $white;
 
   &::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.6));
+    background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.65));
   }
 
   .hero-inner {
     position: relative;
     z-index: 2;
-    h1 { color: $white; }
-    .subtitle { color: rgba(255,255,255,0.9); }
-  }
+    text-align: center;
+    color: #fff;
+    max-width: 1000px;
+    width: 100%;
 
-  .form-floating label {
-    color: $gray-dark;
-  }
-}
+    h1 {
+      color: #fff;
+      font-weight: 700;
+      font-size: 2.4rem;
+      margin-bottom: 0.4rem;
+    }
 
-.card-dest, .paquete-card {
-  border-radius: .6rem;
-  overflow: hidden;
-  @include transition(transform);
-  &:hover { transform: translateY(-6px); }
-}
+    .subtitle {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 1.8rem;
+      font-size: 1.1rem;
+    }
 
-.price {
-  color: $accent;
-  font-weight: 700;
-}
+    /* FORMULARIO */
+    form.search-panel {
+      display: flex;
+      align-items: flex-end; /* <-- cambio clave para alinear todos abajo */
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 1.2rem 1.5rem;
+      border-radius: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-.btn-cta {
-  background-color: $accent !important;
-  color: #000 !important;
-  font-weight: 600;
-  border: none;
-  padding: 0.65rem 1.4rem;
-  border-radius: 0.4rem;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    .form-group {
+      flex: 1 1 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: left;
 
-  &:hover {
-    background-color: darken($accent, 10%) !important;
-    color: #000 !important;
-    transform: translateY(-2px);
-  }
+      label {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #FFCC00;
+        margin-bottom: 0.3rem;
+        padding-left: 0.3rem;
+      }
 
-  &:active {
-    transform: translateY(0);
+      input,
+      select {
+        height: 56px;
+        border: none;
+        border-radius: 0.6rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        color: #222;
+        background-color: rgba(255, 255, 255, 0.95);
+        transition: all 0.3s ease;
+
+        &::placeholder {
+          color: #555;
+          opacity: 1;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.4);
+        }
+      }
+
+      select {
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%23242424' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1rem center; /* flecha más adentro */
+        background-size: 18px;
+        padding-right: 2.5rem;
+      }
+    }
+
+    .btn-cta {
+      height: 56px;
+      background-color: #FFCC00;
+      color: #000;
+      font-weight: 600;
+      border: none;
+      border-radius: 0.6rem;
+      padding: 0 1.6rem;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+      flex: 0 0 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto; /* <-- se alinea al borde inferior */
+
+      &:hover {
+        background-color: darken(#FFCC00, 10%);
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      form.search-panel {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1.4rem;
+      }
+
+      .form-group,
+      .btn-cta {
+        width: 100%;
+        flex: 1 1 auto;
+      }
+
+      .btn-cta {
+        height: 52px;
+        font-size: 1rem;
+        margin-top: 0; /* evita espacio extra */
+      }
+
+      input,
+      select {
+        height: 52px;
+      }
+
+      h1 {
+        font-size: 1.9rem;
+      }
+    }
   }
 }

@@ -38,25 +38,29 @@
       <p class="subtitle">Encuentra tu próxima aventura con los mejores destinos y ofertas</p>
 
       <!-- formulario de búsqueda -->
-      <form class="search-panel d-flex flex-wrap justify-content-center" role="search" aria-label="Buscar viajes">
-        <div class="form-floating me-2 mb-2">
-          <input id="destino" class="form-control" placeholder="Destino" />
-          <label for="destino">Destino</label>
-        </div>
-        <div class="form-floating me-2 mb-2">
-          <input id="fecha" type="date" class="form-control" />
-          <label for="fecha">Fecha ida</label>
-        </div>
-        <div class="form-floating me-2 mb-2">
-          <select id="personas" class="form-select">
-            <option>1 persona</option><option>2 personas</option>
-          </select>
-          <label for="personas">Personas</label>
-        </div>
-        <div class="mb-2">
-          <button class="btn btn-cta">Buscar</button>
-        </div>
-      </form>
+<form class="search-panel">
+  <div class="form-group">
+    <label for="destino">Destino</label>
+    <input type="text" id="destino" name="destino" placeholder="Ej: Madrid, Buenos Aires, etc.">
+  </div>
+
+  <div class="form-group">
+    <label for="fecha">Fecha ida</label>
+    <input type="date" id="fecha" name="fecha">
+  </div>
+
+  <div class="form-group">
+    <label for="personas">Personas</label>
+    <select id="personas" name="personas">
+      <option>1 persona</option>
+      <option>2 personas</option>
+      <option>3 personas</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn-cta">Buscar</button>
+</form>
+
     </div>
   </section>
 

@@ -38,7 +38,7 @@
     /* FORMULARIO */
     form.search-panel {
       display: flex;
-      align-items: flex-end; /* <-- cambio clave para alinear todos abajo */
+      align-items: flex-end; 
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
@@ -91,7 +91,7 @@
         appearance: none;
         background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%23242424' height='24' viewBox='0 0 24 24' width='24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
-        background-position: right 1rem center; /* flecha más adentro */
+        background-position: right 1rem center; 
         background-size: 18px;
         padding-right: 2.5rem;
       }
@@ -111,7 +111,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: auto; /* <-- se alinea al borde inferior */
+      margin-top: auto; 
 
       &:hover {
         background-color: darken(#FFCC00, 10%);
@@ -141,7 +141,7 @@
       .btn-cta {
         height: 52px;
         font-size: 1rem;
-        margin-top: 0; /* evita espacio extra */
+        margin-top: 0; 
       }
 
       input,
